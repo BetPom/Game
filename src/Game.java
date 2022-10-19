@@ -10,14 +10,14 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         Random rnd = new Random();
 
-        System.out.println("Zagrajmy w gre. Wylosuję liczbę od 1 do 10, a Ty zgadnij jaka to. Zaczynamy!");
+        System.out.println("Let's play a game. I will choose number from 1 to 10. Guess which one I think of.");
         los = rnd.nextInt(10) + 1;
         odp = scanner.nextInt();
 
 
         while (odp != los) {
             i++;
-            System.out.println("bad");
+            System.out.println("Bad shot. ");
             if (odp>los){
                 System.out.println("My number is lower");
             }
